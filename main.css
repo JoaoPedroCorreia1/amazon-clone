@@ -677,14 +677,12 @@ h3 {
 }
 
 .header-slider ul img {
-    width: 111.75%;
-    margin-left: -5.875%;
+    width: 100%;
 }
 
 .header-slider div {
     display: flex;
     position: absolute;
-    top: 16.5%;
     z-index: 1;
     width: 84px;
     height: 250px;
@@ -692,7 +690,7 @@ h3 {
     cursor: pointer;
 }
 
-.header-slider img {
+.header-slider .button-arrow {
     width: 22px;
     align-self: center;
     margin: auto;
