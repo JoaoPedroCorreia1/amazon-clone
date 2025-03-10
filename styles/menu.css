@@ -109,7 +109,7 @@ h3 {
 }
 
 .nav .search .category p {
-    font-size: 14px;
+    font-size: 12px;
     white-space: nowrap;
     color: rgb(85, 85, 85);
 }
@@ -191,8 +191,9 @@ h3 {
 }
 
 .nav .search .search-button {
-    width: 49px;
-    height: 100%;
+    min-width: 45px;
+    width: 45px;
+    height: 40px;
     background: #febd69;
     border-radius: 0 4px 4px 0;
     align-items: center;
@@ -897,19 +898,19 @@ h3 {
     align-self: center;
 }
 
-.products-slider-1 {
+.product-slider-1 {
     background: #fff;
     padding: 20px;
     margin: 20px;
     margin-bottom: 15px;
 }
 
-.products-slider-1:hover .products {
+.product-slider-1:hover .products {
     overflow-x: auto;
     padding-bottom: 0;
 }
 
-.products-slider-1 .control-button {
+.product-slider-1 .control-button {
     display: flex;
     position: absolute;
     z-index: 1;
@@ -919,23 +920,28 @@ h3 {
     width: 45px;
     height: 100px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.products-slider-1 .control-button img {
+.product-slider-1 .control-button img {
     width: 12px;
     margin:auto;
     align-self: center;
 }
 
-.products-slider-1 .control-button:hover img {
+.product-slider-1 .control-button:hover img {
     filter: brightness(0.5);
 }
 
-.products-slider-1 #control-next {
+.product-slider-1 #control-prev {
+    opacity: 0.5;
+}
+
+.product-slider-1 #control-next {
     margin-left: 89.2%;
 }
 
-.products-slider-1 .products {
+.product-slider-1 .products {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -944,41 +950,41 @@ h3 {
     padding-bottom: 15px;
 }
 
-.products-slider-1 .products .product-cart {
+.product-slider-1 .products .product-cart {
     padding-bottom: 20px;
 }
 
-.products-slider-1 .products .product-cart .image-container {
+.product-slider-1 .products .product-cart .image-container {
     display: flex;
     min-width: 140px;
     height: 190px;
 }
 
-.products-slider-1 .products img {
+.product-slider-1 .products img {
     align-self: center;
     margin: auto;
     max-width: 270px;
 }
 
-.products-slider-2 {
+.product-slider-2 {
     background: #fff;
     padding: 20px;
     margin: 20px;
     margin-bottom: 15px;
 }
 
-.products-slider-2:hover .control-button {
+.product-slider-2:hover .control-button {
     visibility: visible;
     opacity: 1;
     transition-duration: 500ms;
 }
 
-.products-slider-2:hover .products {
+.product-slider-2:hover .products {
     overflow-x: auto;
     padding-bottom: 0;
 }
 
-.products-slider-2 .control-button {
+.product-slider-2 .control-button {
     display: flex;
     visibility: hidden;
     opacity: 0.2;
@@ -990,23 +996,28 @@ h3 {
     width: 45px;
     height: 100px;
     cursor: pointer;
+    transition: 0.5;
 }
 
-.products-slider-2 .control-button img {
+.product-slider-2 .control-button img {
     width: 12px;
     margin:auto;
     align-self: center;
 }
 
-.products-slider-2 .control-button:hover img {
+.product-slider-2 .control-button:hover img {
     filter: brightness(0.5);
 }
 
-.products-slider-2 #control-next {
+.product-slider-2 #control-prev {
+    opacity: 0.5;
+}
+
+.product-slider-2 #control-next {
     margin-left: 89.2%;
 }
 
-.products-slider-2 .products {
+.product-slider-2 .products {
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -1015,23 +1026,23 @@ h3 {
     padding-bottom: 15px;
 }
 
-.products-slider-2 .products .product-cart {
+.product-slider-2 .products .product-cart {
     padding-bottom: 20px;
 }
 
-.products-slider-2 .products .product-cart .image-container {
+.product-slider-2 .products .product-cart .image-container {
     display: flex;
     min-width: 140px;
     height: 190px;
 }
 
-.products-slider-2 .products img {
+.product-slider-2 .products img {
     align-self: center;
     margin: auto;
     max-width: 270px;
 }
 
-.products-slider-with-price {
+.product-slider-with-price {
     background: #fff;
     margin: 0 30px;
     padding: 20px;
@@ -1039,14 +1050,14 @@ h3 {
     margin-bottom: 15px;
 }
 
-.products-slider-with-price .products {
+.product-slider-with-price .products {
     display: flex;
     overflow: auto;
     flex-direction: row;
     gap: 20px;
 }
 
-.products-slider-with-price .product-card {
+.product-slider-with-price .product-card {
     display: flex;
     flex-direction: column;
     justify-content: end;
